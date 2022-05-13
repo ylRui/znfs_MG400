@@ -35,4 +35,19 @@ English version of the README -> please [click here](./README-EN.md)
 
 - MG400： 1.5.4.0 及以上
 - CR： 3.5.1.9 及以上
+## 6.更新
+
+#2022/5/13  更新夹爪控制函数集---Dodotclaw()
+
+ 夹爪采用标准的Modbus-RTU协议，具体说明在PGE-2使用手册
+ 
+ 先打开串口的权限 ：sudo chmod a+rwx /dev/“串口号”
+
+ - _init_() 函数  ：夹爪初始化
+ - position()函数 ：设定夹爪的开合位置 范围为0-1000
+ - speed()函数 ： 设定夹爪的开合速度 范围为0-100
+ - power() 函数： 设定夹爪的开合力度 范围为20-100
+ - readstate() 函数： 读取夹爪开合状态 
+ - readposition() 函数： 读取夹爪的开合位置
+
 
